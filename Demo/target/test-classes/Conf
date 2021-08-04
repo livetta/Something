@@ -1,0 +1,3 @@
+radioPage = https://demoqa.com/radio-button
+chromedriver = D:\\Tools\\Chromedriver\\chromedriver.exe
+buttonsPage = https://demoqa.com/buttons
