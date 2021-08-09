@@ -1,0 +1,5 @@
+mainPage = https://demoqa.com
+textPage = https://demoqa.com/text-box
+radioPage = https://demoqa.com/radio-button
+checkBoxPage = https://demoqa.com/checkbox
+chromedriver =D:\\Tools\\Chromedriver\\chromedriver.exe
