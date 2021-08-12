@@ -57,7 +57,7 @@ public class WomanPage extends BasePage
         super(driver);
     }
 
-    public void SortProducts()
+    public void sortProducts()
     {
         withAction().moveToElement(firstItem).perform();
         element(sort).click();
@@ -65,7 +65,7 @@ public class WomanPage extends BasePage
     }
 
 
-    public void MoreAboutProduct()
+    public void moreAboutProduct()
     {
         withAction().moveToElement(firstItem).perform();
         withAction().moveToElement(sort).perform();
@@ -73,7 +73,7 @@ public class WomanPage extends BasePage
         Assert.assertTrue(information.isDisplayed());
     }
 
-    public void AddToCompare()
+    public void addToCompare()
     {
         withAction().moveToElement(firstItem).perform();
         element(firstItemToCompare).click();
@@ -84,13 +84,13 @@ public class WomanPage extends BasePage
         Assert.assertEquals(productsToCompare.getText(),"2");
     }
 
-    public void ListView()
+    public void listView()
     {
         element(listView).click();
         Assert.assertEquals(listView.getAttribute("class"), "selected");
     }
 
-    public void SearchFor(String s)
+    public void searchForItem(String s)
     {
         element(searchArea).click();
         element(searchArea).sendKeys(s);
@@ -98,7 +98,7 @@ public class WomanPage extends BasePage
         Assert.assertTrue(searchResults.getText().contains(" been found."));
     }
 
-    public void SearchForNotExistingItems(String s)
+    public void searchForNotExistingItems(String s)
     {
         element(searchArea).click();
         element(searchArea).sendKeys(s);

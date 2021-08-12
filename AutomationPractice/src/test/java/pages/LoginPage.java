@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
     private WebElement emailField;
 
     @FindBy (id = "passwd")
-    private WebElement passField;
+    private WebElement passwordField;
 
     @FindBy (xpath = "//*[@id='SubmitLogin']/span/i")
     private WebElement SignInLogin;
@@ -39,18 +39,18 @@ public class LoginPage extends BasePage {
     }
 
     public void fillPassword(String password){
-        element(passField).sendKeys(password);
+        element(passwordField).sendKeys(password);
     }
 
     public void clickSignInLogin(){
         element(SignInLogin).click();
     }
 
-    public void allertMessageIsDisplayed(){
+    public void checkIfAlertMessageIsDisplayed(){
         Assert.assertTrue(element(AllertMessage).isDisplayed());
     }
 
-    public void allertMessageIsCorrect(String message){
+    public void checkAlertMessageIsCorrect(String message){
         Assert.assertEquals(message, element(AllertMessage).getText());
     }
 

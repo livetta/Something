@@ -7,12 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 @DefaultUrl("http://automationpractice.com/index.php?controller=my-account")
-
 public class MyAccountPage extends BasePage {
 
     @FindBy (xpath = "//div[@class='header_user_info']/a/span")
     private WebElement myAccountName;
-    //Кнопка сан аут:
+
     @FindBy(xpath = "//div/a[@class='logout']")
     private WebElement signOutButton;
 

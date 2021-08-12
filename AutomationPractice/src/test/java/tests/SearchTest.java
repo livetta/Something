@@ -5,17 +5,17 @@ import org.junit.Test;
 public class SearchTest extends SampleTest
 {
     @Test
-    public void SearchForItem ()
+    public void searchForItem ()
     {
         user.mainPage.openMainPage();
-        user.womanPage.SearchFor("shirt");
+        user.womanPage.searchForItem("shirt");
     }
 
     @Test
-    public void SearchForNotExistingItems ()
+    public void searchForNotExistingItems ()
     {
         user.mainPage.openMainPage();
-        user.womanPage.SearchForNotExistingItems("fdg");
+        user.womanPage.searchForNotExistingItems("fdg");
     }
 
 }
