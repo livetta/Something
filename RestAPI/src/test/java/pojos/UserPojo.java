@@ -1,6 +1,9 @@
 package pojos;
 
-public class UserPojo{
+import org.checkerframework.checker.units.qual.A;
+
+public class UserPojo
+{
 
 	private String website;
 	private Address address;
@@ -10,6 +13,22 @@ public class UserPojo{
 	private int id;
 	private String email;
 	private String username;
+
+	public UserPojo()
+	{
+
+	}
+
+	public UserPojo(int id, String userName, String email, String website, Address address, Company company, String phone) {
+		this.website = website;
+		this.address = address;
+		this.phone = phone;
+		this.name = name;
+		this.company = company;
+		this.id = id;
+		this.email = email;
+		this.username = username;
+	}
 
 	public String getWebsite(){
 		return website;
@@ -42,4 +61,6 @@ public class UserPojo{
 	public String getUsername(){
 		return username;
 	}
+
+
 }
