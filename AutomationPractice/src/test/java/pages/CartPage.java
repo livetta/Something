@@ -36,7 +36,7 @@ public class CartPage extends BasePage
         super(driver);
     }
 
-    public void AddAndMoveToCart()
+    public void addAndMoveToCart()
     {
         proceedToCheckout.click();
         Assert.assertTrue(productInCart.isDisplayed());
@@ -46,19 +46,19 @@ public class CartPage extends BasePage
         open();
     }
 
-    public void AddAndContinueShopping()
+    public void addAndContinueShopping()
     {
         continueShopping.click();
         Assert.assertTrue(columnWithItems.isDisplayed());
     }
 
-    public void AlertMessage()
+    public void checkAlertMessageIsDisplayed()
     {
        waitFor(alertMessage).waitUntilVisible();
         Assert.assertTrue(alertMessage.isDisplayed());
     }
 
-    public void DeleteFromCart()
+    public void deleteFromCart()
     {
         deleteButton.click();
     }

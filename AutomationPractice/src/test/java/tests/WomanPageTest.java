@@ -6,35 +6,35 @@ public class WomanPageTest extends SampleTest
 {
 
     @Test
-    public void SeeMoreInformation ()
+    public void seeMoreInformationAboutItem ()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
-        user.womanPage.MoreAboutProduct();
+        user.womanPage.moreAboutProduct();
     }
 
     @Test
-    public void SortByPriceAsc ()
+    public void sortByPriceAsc ()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
-        user.womanPage.SortByPrice();
+        user.womanPage.sortByPrice();
     }
 
     @Test
-    public void CompareTwoItems ()
+    public void compareTwoItems ()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
-        user.womanPage.CompareTwoItems();
+        user.womanPage.compareTwoItems();
     }
 
     @Test
-    public void ChangeViewToGrid ()
+    public void changeViewToGrid ()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
-        user.womanPage.ListView();
+        user.womanPage.listView();
     }
 
 

@@ -31,12 +31,12 @@ public class LoginSteps extends ScenarioSteps {
     }
 
     @Step
-    public void allertMessageIsDisplayed(){
-        onPage.allertMessageIsDisplayed();
+    public void checkIfAlertMessageIsDisplayed(){
+        onPage.checkIfAlertMessageIsDisplayed();
     }
 
     @Step
-    public void allertMessageIsCorrect(String message){
-        onPage.allertMessageIsCorrect(message);
+    public void checkIfAlertMessageIsCorrect(String message){
+        onPage.checkAlertMessageIsCorrect(message);
     }
 }

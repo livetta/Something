@@ -5,31 +5,31 @@ import org.junit.Test;
 public class CartTest extends SampleTest
 {
     @Test
-    public void AddItemInCartTest()
+    public void addItemInCartTest()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
         user.myAccountPage.addToCartClick();
-        user.cartPage.AddToCartAndProceedToCheckout();
+        user.cartPage.addToCartAndProceedToCheckout();
     }
 
     @Test
-    public void AddItemAndContinueShopping()
+    public void addItemAndContinueShopping()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
         user.myAccountPage.addToCartClick();
-        user.cartPage.AddAndContinueShopping();
+        user.cartPage.addAndContinueShopping();
     }
 
     @Test
-    public void  DeleteFromCart ()
+    public void  deleteFromCart ()
     {
         user.mainPage.openMainPage();
         user.myAccountPage.clickOnWomenTab();
         user.myAccountPage.addToCartClick();
-        user.cartPage.AddToCartAndProceedToCheckout();
-        user.cartPage.DeleteFromCart();
-        user.cartPage.alertMessageIsDisplayed();
+        user.cartPage.addToCartAndProceedToCheckout();
+        user.cartPage.deleteFromCart();
+        user.cartPage.checkAlertMessageIsDisplayed();
     }
 }

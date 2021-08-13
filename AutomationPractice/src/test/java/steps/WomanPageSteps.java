@@ -6,25 +6,25 @@ import pages.WomanPage;
 
 public class WomanPageSteps extends ScenarioSteps
 {
-    private WomanPage Page;
+    private WomanPage page;
 
 
     @Step
-    public void MoreAboutProduct () {Page.MoreAboutProduct();}
+    public void moreAboutProduct () {page.moreAboutProduct();}
 
     @Step
-    public void SortByPrice() {Page.SortProducts();}
+    public void sortByPrice() {page.sortProducts();}
 
     @Step
-    public void CompareTwoItems() {Page.AddToCompare();}
+    public void compareTwoItems() {page.addToCompare();}
 
     @Step
-    public void ListView() {Page.ListView();}
+    public void listView() {page.listView();}
 
     @Step
-    public void SearchFor(String s) {Page.SearchFor(s);}
+    public void searchForItem(String s) {page.searchForItem(s);}
 
     @Step
-    public void SearchForNotExistingItems(String s) {Page.SearchForNotExistingItems(s);}
+    public void searchForNotExistingItems(String s) {page.searchForNotExistingItems(s);}
 
 }

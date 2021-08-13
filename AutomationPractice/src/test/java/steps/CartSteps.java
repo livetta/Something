@@ -13,32 +13,32 @@ public class CartSteps extends ScenarioSteps
 
 
     @Step
-    public void AddToCartAndProceedToCheckout ()
+    public void addToCartAndProceedToCheckout ()
     {
-        page.AddAndMoveToCart();
+        page.addAndMoveToCart();
     }
 
     @Step
-    public void AddAndContinueShopping ()
+    public void addAndContinueShopping ()
     {
-        page.AddAndContinueShopping();
+        page.addAndContinueShopping();
     }
 
     @Step
-    public void ClickOnCartButton()
+    public void clickOnCartButton()
     {
     page.openCartPage();
     }
 
     @Step
-    public void DeleteFromCart()
+    public void deleteFromCart()
     {
-       page.DeleteFromCart();
+       page.deleteFromCart();
     }
 
     @Step
-    public void alertMessageIsDisplayed(){
-        page.AlertMessage();
+    public void checkAlertMessageIsDisplayed(){
+        page.checkAlertMessageIsDisplayed();
     }
 
 }
