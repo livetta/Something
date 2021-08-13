@@ -1,15 +1,15 @@
 package tests;
 
-
 import org.junit.Test;
 import pojos.UserPojo;
 import steps.UserSteps;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CheckExistanceOfUserTest
+public class CheckExistanceOfUserTest extends SampleTest
 {
     List<UserPojo> users = UserSteps.getUsers();
+
     @Test
     public void checkIfUserExistByEmail()
     {
@@ -27,8 +27,5 @@ public class CheckExistanceOfUserTest
     {
         assertThat(users).extracting(UserPojo:: getUsername).contains("Moriah.Stanton");
     }
-
-
-
 
 }
